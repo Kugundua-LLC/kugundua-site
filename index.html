@@ -15,6 +15,7 @@
         .product-card { background: #1e1e1e; border: 1px solid #333; border-radius: 12px; padding: 28px; text-decoration: none; color: var(--text); transition: 0.2s; display: flex; flex-direction: column; gap: 10px; }
         .product-card:hover { border-color: var(--primary); background: #242424; }
         .product-icon { width: 56px; height: 56px; background: var(--primary); border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+        img.product-icon { background: none; object-fit: cover; }
         .product-card h2 { font-size: 1.3rem; color: #fff; margin: 0; }
         .product-card p { font-size: 0.95rem; color: #888; margin: 0; line-height: 1.5; }
         .product-card .arrow { margin-top: auto; padding-top: 12px; font-size: 0.85rem; color: var(--primary); }
@@ -30,8 +31,19 @@
         <p>Simple apps for everyday life</p>
     </header>
 
-    <main style="text-align: center; padding: 60px 20px; color: #555; font-size: 1.1rem;">
-        Products Coming Soon
+    <main class="products">
+        <a href="stream-tracker/index.html" class="product-card">
+            <img class="product-icon" src="stream-tracker/app-icon.png" alt="Stream Tracker app icon">
+            <h2>Stream Tracker</h2>
+            <p>Keep track of your favorite movies and shows, right on your Android device.</p>
+            <span class="arrow">Learn more &rarr;</span>
+        </a>
+        <a href="track-streamer/index.html" class="product-card">
+            <div class="product-icon"></div>
+            <h2>Track Streamer</h2>
+            <p>Keep track of your favorite movies and shows, right on your iPhone.</p>
+            <span class="arrow">Learn more &rarr;</span>
+        </a>
     </main>
 
     <footer>

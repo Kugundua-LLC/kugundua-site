@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stream Tracker | Track Your Favorite Movies & TV Shows</title>
+    <title>Track Streamer | Track Your Favorite Movies & TV Shows</title>
     <style>
         :root { --primary: #6200ee; --bg: #121212; --text: #e0e0e0; }
         body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; align-items: center; justify-content: center; text-align: center; }
@@ -13,14 +13,13 @@
         nav a:hover { color: #fff; }
         h1 { font-size: 3rem; margin-bottom: 10px; color: #fff; }
         p { font-size: 1.2rem; color: #b0b0b0; line-height: 1.5; }
-        .badge-container { margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; align-items: center; }
+        .badge-container { margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
         .badge { background: #333; padding: 12px 24px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: bold; border: 1px solid #444; transition: 0.3s; }
         .badge:hover { background: #444; border-color: var(--primary); }
-        .badge-img { height: 60px; }
         footer { margin-top: 50px; padding: 20px; font-size: 0.9rem; color: #666; }
         footer a { color: #888; text-decoration: none; margin: 0 10px; }
         footer a:hover { text-decoration: underline; }
-        .logo { width: 100px; height: 100px; border-radius: 22%; margin-bottom: 20px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .logo { width: 100px; height: 100px; background: var(--primary); border-radius: 22%; margin-bottom: 20px; display: inline-block; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
     </style>
 </head>
 <body>
@@ -30,15 +29,13 @@
     </nav>
 
     <div class="container">
-        <img class="logo" src="app-icon.png" alt="Stream Tracker app icon">
+        <div class="logo"></div>
 
-        <h1>Stream Tracker</h1>
+        <h1>Track Streamer</h1>
         <p>Keep track of your favorite movies and shows. Rate what you watch, organize your list by watch status, and see exactly where each title is streaming.</p>
 
         <div class="badge-container">
-            <a href="https://play.google.com/store/apps/details?id=com.kugundua.streamtracker" target="_blank" rel="noopener">
-                <img class="badge-img" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-            </a>
+            <a href="#" class="badge">App Store</a>
         </div>
     </div>
 
